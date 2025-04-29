@@ -4,6 +4,13 @@
   font-family: "Prompt", sans-serif;
 }
 
+html,body {
+  margin: 0;
+  padding: 0;
+  background: #0a0a0a;
+  color: #f3f4f6;
+}
+
 @theme {
   --blue-950: #000814;
   --blue-900: #001d3d;
@@ -39,3 +46,38 @@
     transform: translateY(0);
   }
 }
+
+
+
+
+@layer utilities {
+
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  .animate-blink {
+    animation: blink 0.8s step-end infinite;
+  }
+
+
+  @keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(250%);
+    }
+  }
+  .animate-loading-bar {
+    animation: loading 0.8s ease infinite;
+  }
+
+  
+}
+
