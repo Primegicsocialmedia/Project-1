@@ -1,10 +1,11 @@
-import React from "react";
-import Navbar from "./components/Navbar";
+import SignInSignUp from "./components/SignInSignUp";
+
+
 
 const App = () => {
   return (
     <div >
-      <Navbar/>
+   <SignInSignUp />
     </div>
   );
 };
