@@ -1,4 +1,5 @@
 import React from "react";
+import { RevealOnScroll } from "../RevealOnScroll";
 
 const Home = () => {
   return (
@@ -6,6 +7,7 @@ const Home = () => {
       id="home"
       className="min-h-screen flex items-center justify-center relative"
     >
+        <RevealOnScroll>
       <div className="text-center z-10 px-4">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-purple-600 leading-right bg-clip-text text-transparent">
           Hi, I'm Prime Creative
@@ -33,6 +35,7 @@ const Home = () => {
           </a>
         </div>
       </div>
+      </RevealOnScroll> 
     </section>
   );
 };
